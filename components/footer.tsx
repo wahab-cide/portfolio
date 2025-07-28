@@ -15,12 +15,12 @@ export const Footer = () => {
   return (
     <footer id="contact" className="py-12 px-4 md:px-8 bg-black border-t border-neutral-900">
       <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-neutral-500 text-sm">
             © 2025. All rights reserved.
           </p>
           
-          <div className="flex gap-6">
+          <div className="grid grid-cols-3 md:flex gap-6 md:gap-6 text-left">
             {links.map((link, index) => (
               <Link
                 key={index}
