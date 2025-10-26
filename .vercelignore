@@ -1,0 +1,24 @@
+# Ignore cloned project directories (only needed for blog content, not deployment)
+../Loop
+../loop-api
+../african_llm_project
+../fraud-detection
+../graph-theory
+
+# Node modules
+node_modules
+.next
+
+# Environment files
+.env*.local
+
+# Development files
+.git
+.vscode
+.idea
+
+# Build artifacts
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

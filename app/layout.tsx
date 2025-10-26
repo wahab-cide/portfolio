@@ -8,9 +8,27 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio | CS & Mathematics Student",
+  title: "Wahab Cide | Developer & Researcher",
   description:
-    "Building the future of mobility and sustainable water access. CS & Mathematics student working on Loop, Aquion, and AI research for African languages.",
+    "CS & Mathematics student at Williams College. Building Loop (rideshare platform), researching AI for African languages, and writing technical content on full-stack development.",
+  keywords: [
+    "Wahab Cide",
+    "Williams College",
+    "Full Stack Developer",
+    "Next.js",
+    "React Native",
+    "TypeScript",
+    "AI Research",
+    "Technical Writing",
+    "Loop",
+  ],
+  authors: [{ name: "Wahab Cide" }],
+  openGraph: {
+    title: "Wahab Cide | Developer & Researcher",
+    description:
+      "Building mobility solutions and researching AI for African languages",
+    type: "website",
+  },
   icons: {
     icon: "/portfolio.png",
   },

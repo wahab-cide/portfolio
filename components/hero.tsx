@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <div className="relative flex min-h-[70vh] flex-col justify-center px-4 md:px-8 bg-black">
+    <div className="relative flex min-h-[60vh] flex-col justify-center px-4 md:px-8 bg-black pt-20 md:pt-24">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="text-2xl md:text-3xl font-light text-neutral-300 mb-12"
         >
-          Wahab Cide
+          Abdul Wahab Cide Ali
         </motion.h2>
         
         <div className="border-l-2 border-neutral-800 pl-6 hover:border-neutral-600 transition-colors duration-300">
