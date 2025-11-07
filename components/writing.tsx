@@ -8,7 +8,7 @@ export function Writing() {
     {
       title: "Building Interactive Graph Visualizations with Cytoscape.js",
       description: "A comprehensive guide to creating interactive graph theory visualizations using Cytoscape.js in Next.js, featuring algorithmic graph generation and real-time user interactions.",
-      date: "January 2025",
+      date: "Aug 2025",
       readTime: "12 min read",
       link: "/blog/graph-visualization-cytoscape",
       tags: ["Cytoscape.js", "TypeScript", "React", "Graph Theory", "Visualization"],
@@ -16,7 +16,7 @@ export function Writing() {
     {
       title: "Building Production APIs with Next.js: A Real-World Case Study",
       description: "A deep dive into building production-grade APIs using Next.js App Router, featuring real-world examples from a rideshare platform handling authentication, payments, and real-time features.",
-      date: "January 2025",
+      date: "Jan 2025",
       readTime: "15 min read",
       link: "/blog/building-production-apis-nextjs",
       tags: ["Next.js", "TypeScript", "API Design", "PostgreSQL", "Stripe"],

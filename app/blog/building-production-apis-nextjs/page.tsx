@@ -53,7 +53,7 @@ export default function Article() {
             </div>
             <div className="text-neutral-500 text-sm">
               <p className="text-neutral-300 font-medium">Wahab Cide</p>
-              <time className="text-neutral-500">October 2025 · 15 min read</time>
+              <time className="text-neutral-500">Jan 2025 · 15 min read</time>
             </div>
           </div>
           <p className="text-neutral-400 mt-6 text-lg leading-relaxed">

@@ -52,7 +52,7 @@ export function Podcasts() {
           <div className="relative aspect-video bg-neutral-950 border border-neutral-800 rounded-xl overflow-hidden group hover:border-neutral-700 transition-all duration-500">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/1-sKq-V0UZ0?autoplay=1&mute=1&loop=1&playlist=1-sKq-V0UZ0&controls=1"
+              src="https://www.youtube.com/embed/Zqka_1ZhnTM?autoplay=1&mute=1&loop=1&playlist=Zqka_1ZhnTM&controls=1"
               title="Studio 275 - Featured Episode"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
