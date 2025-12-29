@@ -38,9 +38,9 @@ export default function Article() {
           Back to home
         </Link>
 
-        <header className="mb-16 border-l-2 border-emerald-500/50 pl-6">
+        <header className="mb-16 border-l-2 border-blue-500/50 pl-6">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-snug">
-            Building Interactive Graph Visualizations with <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Cytoscape.js</span>
+            Building Interactive Graph Visualizations with <span className="text-blue-400">Cytoscape.js</span>
           </h1>
           <div className="flex items-center gap-4">
             <div className="relative w-12 h-12 rounded-full ring-2 ring-neutral-800 overflow-hidden flex-shrink-0">
@@ -84,8 +84,8 @@ export default function Article() {
 
           {/* Introduction */}
           <section id="introduction" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-emerald-500/50 pl-6">
-              <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Introduction</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/30 pl-6">
+              <span className="text-blue-400">Introduction</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -118,8 +118,8 @@ export default function Article() {
 
           {/* Why Cytoscape */}
           <section id="why-cytoscape" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-teal-500/50 pl-6">
-              <span className="text-teal-400">Why Cytoscape.js?</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/30 pl-6">
+              <span className="text-cyan-400">Why Cytoscape.js?</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -128,7 +128,7 @@ export default function Article() {
               </p>
 
               <div className="space-y-6 my-6">
-                <div className="border-l-2 border-teal-500/30 pl-4">
+                <div className="border-l-2 border-cyan-500/20 pl-4">
                   <h4 className="text-lg font-medium text-neutral-300 mb-2">1. Graph-First Design</h4>
                   <p>
                     Unlike D3.js which is a general-purpose visualization library, Cytoscape.js is specifically designed
@@ -137,7 +137,7 @@ export default function Article() {
                   </p>
                 </div>
 
-                <div className="border-l-2 border-teal-500/30 pl-4">
+                <div className="border-l-2 border-cyan-500/20 pl-4">
                   <h4 className="text-lg font-medium text-neutral-300 mb-2">2. Built-in Layout Algorithms</h4>
                   <p>
                     Cytoscape ships with multiple layout algorithms (circle, grid, breadthfirst, cose) and supports
@@ -146,7 +146,7 @@ export default function Article() {
                   </p>
                 </div>
 
-                <div className="border-l-2 border-teal-500/30 pl-4">
+                <div className="border-l-2 border-cyan-500/20 pl-4">
                   <h4 className="text-lg font-medium text-neutral-300 mb-2">3. Interactive by Default</h4>
                   <p>
                     Panning, zooming, node dragging, and selection work out of the box. The library handles touch events,
@@ -154,7 +154,7 @@ export default function Article() {
                   </p>
                 </div>
 
-                <div className="border-l-2 border-teal-500/30 pl-4">
+                <div className="border-l-2 border-cyan-500/20 pl-4">
                   <h4 className="text-lg font-medium text-neutral-300 mb-2">4. Performance</h4>
                   <p>
                     Cytoscape uses canvas rendering (with optional WebGL for large graphs), providing smooth performance
@@ -167,8 +167,8 @@ export default function Article() {
 
           {/* Setup */}
           <section id="setup" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/50 pl-6">
-              <span className="text-cyan-400">Project Setup</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/30 pl-6">
+              <span className="text-blue-400">Project Setup</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -200,8 +200,8 @@ npm install react-cytoscapejs  # Optional React wrapper`}
 
           {/* Data Structures */}
           <section id="data-structures" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/50 pl-6">
-              <span className="text-blue-400">Graph Data Structures</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/30 pl-6">
+              <span className="text-cyan-400">Graph Data Structures</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -244,8 +244,8 @@ const triangle: GraphElement[] = [
 
           {/* Graph Generators */}
           <section id="generators" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-purple-500/50 pl-6">
-              <span className="text-purple-400">Algorithmic Graph Generation</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/30 pl-6">
+              <span className="text-blue-400">Algorithmic Graph Generation</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -393,8 +393,8 @@ const triangle: GraphElement[] = [
 
           {/* Interactive Features */}
           <section id="interactions" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-pink-500/50 pl-6">
-              <span className="text-pink-400">Interactive Features</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/30 pl-6">
+              <span className="text-cyan-400">Interactive Features</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -555,8 +555,8 @@ useEffect(() => {
 
           {/* Styling */}
           <section id="styling" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-amber-500/50 pl-6">
-              <span className="text-amber-400">Styling & Animations</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/30 pl-6">
+              <span className="text-blue-400">Styling & Animations</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -642,8 +642,8 @@ cyRef.current.layout({
 
           {/* Performance */}
           <section id="performance" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-lime-500/50 pl-6">
-              <span className="text-lime-400">Performance Optimizations</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/30 pl-6">
+              <span className="text-cyan-400">Performance Optimizations</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -715,8 +715,8 @@ useEffect(() => {
 
           {/* Conclusion */}
           <section id="conclusion" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-sky-500/50 pl-6">
-              <span className="text-sky-400">Conclusion</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/30 pl-6">
+              <span className="text-blue-400">Conclusion</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>

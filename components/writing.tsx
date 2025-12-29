@@ -6,6 +6,14 @@ import Link from "next/link";
 export function Writing() {
   const articles = [
     {
+      title: "Programming a Chess Engine: Understanding Chess Differently",
+      description: "How building a chess engine taught me more about chess than years of playing—and why understanding the mathematics of chess, though different from gameplay, dramatically improved my practical understanding of the game.",
+      date: "Dec 2025",
+      readTime: "20 min read",
+      link: "/blog/programmming-a-chess-engine",
+      tags: ["C++", "Chess", "Algorithms", "Game Theory", "AI"],
+    },
+    {
       title: "Building Interactive Graph Visualizations with Cytoscape.js",
       description: "A comprehensive guide to creating interactive graph theory visualizations using Cytoscape.js in Next.js, featuring algorithmic graph generation and real-time user interactions.",
       date: "Aug 2025",

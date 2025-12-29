@@ -125,7 +125,7 @@ export function CodeBlock({ children, filename }: CodeBlockProps) {
     // Types (capitalized words, but not at start of line to avoid matching comments)
     applyHighlight(
       /(?<!^|\s*\/\/.*)\b([A-Z][a-zA-Z0-9_]*)\b/g,
-      (match) => `<span class="text-cyan-300">${match}</span>`
+      (match) => `<span class="text-cyan-400">${match}</span>`
     );
 
     return parts.map(p => p.text).join('');
@@ -136,9 +136,9 @@ export function CodeBlock({ children, filename }: CodeBlockProps) {
       {filename && (
         <div className="flex items-center gap-2 px-4 py-2 bg-neutral-900/50 border-b border-neutral-800">
           <div className="flex gap-1.5">
-            <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-            <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-            <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+            <div className="w-3 h-3 rounded-full bg-neutral-700"></div>
+            <div className="w-3 h-3 rounded-full bg-neutral-700"></div>
+            <div className="w-3 h-3 rounded-full bg-neutral-700"></div>
           </div>
           <span className="text-xs text-neutral-500 ml-2">{filename}</span>
         </div>

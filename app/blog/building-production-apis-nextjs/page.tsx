@@ -40,7 +40,7 @@ export default function Article() {
 
         <header className="mb-16 border-l-2 border-blue-500/50 pl-6">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-snug">
-            Building Production APIs with Next.js: <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">A Real-World Case Study</span>
+            Building Production APIs with Next.js: <span className="text-blue-400">A Real-World Case Study</span>
           </h1>
           <div className="flex items-center gap-4">
             <div className="relative w-12 h-12 rounded-full ring-2 ring-neutral-800 overflow-hidden flex-shrink-0">
@@ -84,8 +84,8 @@ export default function Article() {
 
           {/* Introduction */}
           <section id="introduction" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light text-white mb-6 border-l-2 border-blue-500/50 pl-6">
-              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Introduction</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/30 pl-6">
+              <span className="text-blue-400">Introduction</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -96,7 +96,7 @@ export default function Article() {
                 authentication middleware, and orchestrating deployment infrastructure.
               </p>
               <p>
-                Instead, we took a different path: <code className="text-sm bg-gradient-to-r from-blue-500/10 to-cyan-500/10 text-cyan-400 px-2 py-1 rounded border border-cyan-500/20">npx create-next-app@latest</code> and started writing API routes.
+                Instead, we took a different path: <code className="text-sm bg-neutral-900 text-cyan-400 px-2 py-1 rounded border border-cyan-500/20">npx create-next-app@latest</code> and started writing API routes.
               </p>
               <p>
                 This article explores how Next.js App Router's API Routes enabled us to build a production-grade backend
@@ -121,12 +121,12 @@ export default function Article() {
 
           {/* Architecture Overview */}
           <section id="architecture" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-purple-500/50 pl-6">
-              <span className="text-purple-400">Architecture Overview</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/30 pl-6">
+              <span className="text-cyan-400">Architecture Overview</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
-                Next.js App Router introduces a file-system based routing convention where each <code className="text-sm bg-gradient-to-r from-purple-500/10 to-pink-500/10 text-pink-400 px-2 py-1 rounded border border-pink-500/20">route.ts</code> file
+                Next.js App Router introduces a file-system based routing convention where each <code className="text-sm bg-neutral-900 text-pink-400 px-2 py-1 rounded border border-pink-500/20">route.ts</code> file
                 becomes a serverless API endpoint. This eliminates the boilerplate of traditional backend frameworks while maintaining
                 type safety and developer experience.
               </p>
@@ -156,8 +156,8 @@ export default function Article() {
               </CodeBlock>
 
               <p>
-                Each route file exports HTTP method handlers (<code className="text-sm bg-gradient-to-r from-emerald-500/10 to-teal-500/10 text-emerald-400 px-2 py-1 rounded border border-emerald-500/20">GET</code>, <code className="text-sm bg-gradient-to-r from-blue-500/10 to-cyan-500/10 text-blue-400 px-2 py-1 rounded border border-blue-500/20">POST</code>, <code className="text-sm bg-gradient-to-r from-amber-500/10 to-orange-500/10 text-amber-400 px-2 py-1 rounded border border-amber-500/20">PUT</code>, <code className="text-sm bg-gradient-to-r from-red-500/10 to-pink-500/10 text-red-400 px-2 py-1 rounded border border-red-500/20">DELETE</code>)
-                as async functions. Dynamic segments like <code className="text-sm bg-gradient-to-r from-violet-500/10 to-purple-500/10 text-violet-400 px-2 py-1 rounded border border-violet-500/20">[rideId]</code> become available as parameters, enabling RESTful patterns
+                Each route file exports HTTP method handlers (<code className="text-sm bg-neutral-900 text-emerald-400 px-2 py-1 rounded border border-emerald-500/20">GET</code>, <code className="text-sm bg-neutral-900 text-blue-400 px-2 py-1 rounded border border-blue-500/20">POST</code>, <code className="text-sm bg-neutral-900 text-amber-400 px-2 py-1 rounded border border-amber-500/20">PUT</code>, <code className="text-sm bg-neutral-900 text-red-400 px-2 py-1 rounded border border-red-500/20">DELETE</code>)
+                as async functions. Dynamic segments like <code className="text-sm bg-neutral-900 text-violet-400 px-2 py-1 rounded border border-violet-500/20">[rideId]</code> become available as parameters, enabling RESTful patterns
                 without manual routing configuration.
               </p>
             </div>
@@ -165,8 +165,8 @@ export default function Article() {
 
           {/* API Routes Structure */}
           <section id="api-routes" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-pink-500/50 pl-6">
-              <span className="text-pink-400">API Routes Structure</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/30 pl-6">
+              <span className="text-blue-400">API Routes Structure</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -298,8 +298,8 @@ export async function GET(request: Request) {
 
           {/* Database Integration */}
           <section id="database" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-emerald-500/50 pl-6">
-              <span className="text-emerald-400">Database Integration</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/30 pl-6">
+              <span className="text-cyan-400">Database Integration</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -408,8 +408,8 @@ CREATE TRIGGER prevent_negative_seats
 
           {/* Authentication Patterns */}
           <section id="authentication" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/50 pl-6">
-              <span className="text-cyan-400">Authentication Patterns</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/30 pl-6">
+              <span className="text-blue-400">Authentication Patterns</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -519,8 +519,8 @@ export async function POST(request: Request) {
 
           {/* Atomic Operations & Transactions */}
           <section id="transactions" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-amber-500/50 pl-6">
-              <span className="text-amber-400">Atomic Operations & Transactions</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/30 pl-6">
+              <span className="text-cyan-400">Atomic Operations & Transactions</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -680,8 +680,8 @@ export async function POST(request: Request) {
 
           {/* Payment Processing */}
           <section id="payments" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-indigo-500/50 pl-6">
-              <span className="text-indigo-400">Payment Processing with Stripe</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/30 pl-6">
+              <span className="text-blue-400">Payment Processing with Stripe</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -891,8 +891,8 @@ export async function POST(request: Request) {
 
           {/* Webhook Handlers */}
           <section id="webhooks" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-violet-500/50 pl-6">
-              <span className="text-violet-400">Webhook Handlers</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/30 pl-6">
+              <span className="text-cyan-400">Webhook Handlers</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -1023,8 +1023,8 @@ export async function POST(request: Request) {
 
           {/* Deployment */}
           <section id="deployment" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-lime-500/50 pl-6">
-              <span className="text-lime-400">Deployment & Production Considerations</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-blue-500/30 pl-6">
+              <span className="text-blue-400">Deployment & Production Considerations</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
@@ -1132,8 +1132,8 @@ export async function POST(request: Request) {
 
           {/* Conclusion */}
           <section id="conclusion" className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-sky-500/50 pl-6">
-              <span className="text-sky-400">Conclusion</span>
+            <h2 className="text-2xl md:text-3xl font-light mb-6 border-l-2 border-cyan-500/30 pl-6">
+              <span className="text-cyan-400">Conclusion</span>
             </h2>
             <div className="text-neutral-400 leading-relaxed space-y-4">
               <p>
