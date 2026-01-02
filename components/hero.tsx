@@ -24,12 +24,12 @@ export function Hero() {
 
         <div className="border-l-4 border-neutral-700 pl-8 hover:border-neutral-500 transition-colors duration-300 space-y-6">
         <p className="text-neutral-200 text-xl md:text-2xl lg:text-3xl leading-relaxed">
-          Studying Computer Science & Mathematics at{" "}
+          Studying computer science, number theory, filmaking and creative writing at{" "}
           <Link
             href="https://www.williams.edu"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-400 hover:text-purple-300 transition-colors font-medium decoration-purple-500/30 hover:decoration-purple-400"
+            className="text-grey-400 hover:text-purple-300 transition-colors font-medium decoration-purple-500/30 hover:decoration-purple-400"
           >
             Williams College
           </Link>

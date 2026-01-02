@@ -8,10 +8,10 @@ export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
-    { name: "Projects", link: "#projects" },
-    { name: "Writing", link: "#writing" },
-    { name: "Podcasts", link: "#podcasts" },
-    { name: "Research", link: "#research" },
+    { name: "Projects", link: "/#projects" },
+    { name: "Blog", link: "/blog" },
+    { name: "Podcasts", link: "/#podcasts" },
+    { name: "Research", link: "/#research" },
   ];
 
   // Add scroll detection for enhanced visual feedback

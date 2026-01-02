@@ -144,12 +144,8 @@ export function CurrentlyBuilding() {
 
         <div className="grid grid-cols-1 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
               className="border border-neutral-800 rounded-lg p-6 md:p-8 hover:border-neutral-700 transition-all duration-300 bg-neutral-950/50"
             >
               {/* Header */}
@@ -238,7 +234,7 @@ export function CurrentlyBuilding() {
                   ))}
                 </ul>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
