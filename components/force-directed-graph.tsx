@@ -9,7 +9,7 @@ import { GraphNode, GraphLink } from '@/types/graph';
 export function ForceDirectedGraph() {
   const svgRef = useRef<SVGSVGElement>(null);
   const [dimensions, setDimensions] = useState({ width: 1000, height: 700 });
-  const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
+  const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(graphData.nodes.find(n => n.id === 'williams') || null);
   const simulationRef = useRef<d3.Simulation<GraphNode, GraphLink> | null>(null);
 
   // Responsive dimensions
@@ -136,7 +136,9 @@ export function ForceDirectedGraph() {
     });
 
     node.on('mouseleave', function() {
-      setHoveredNode(null);
+      // Reset to Williams College instead of clearing
+      const williams = graphData.nodes.find(n => n.id === 'williams');
+      setHoveredNode(williams || null);
 
       // Reset node size
       d3.select(this).select('circle')
@@ -159,7 +161,7 @@ export function ForceDirectedGraph() {
     });
 
     // Click handler
-    node.on('click', (event, d) => {
+    node.on('click', (_event, d) => {
       if (d.url) {
         window.open(d.url, '_blank');
       }
@@ -206,11 +208,11 @@ export function ForceDirectedGraph() {
           <desc>Visual representation of Abdul Wahab&apos;s work, education, and research</desc>
         </svg>
 
-        {/* Tooltip */}
+        {/* Tooltip - only show on desktop for default Williams text */}
         {hoveredNode && hoveredNode.type === 'central' && (
           <div
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 md:top-1/2 md:left-0 md:translate-x-0 md:-translate-y-1/2 pointer-events-none z-10 text-center md:text-left bg-black border-l-2 border-orange-400 px-6 py-4 md:ml-4"
-            style={{ maxWidth: '400px' }}
+            className="hidden md:block absolute top-1/2 -translate-y-1/2 pointer-events-none z-10 text-left bg-black border-l-2 border-orange-400 px-6 py-4 left-0"
+            style={{ maxWidth: '350px' }}
           >
             <h3 className="text-white font-medium text-lg mb-2">{hoveredNode.label}</h3>
             {hoveredNode.description && (

@@ -5,7 +5,7 @@ export const graphData: GraphData = {
     // Central nodes
     {
       id: 'williams',
-      label: 'Williams College',
+      label: 'Education: Williams College',
       type: 'central',
       category: 'education',
       color: '#fb923c',

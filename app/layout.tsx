@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { CustomCursor } from "@/components/custom-cursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +42,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("antialiased bg-black", inter.className)}>
+      <body className={cn("antialiased bg-black cursor-none", inter.className)}>
+        <CustomCursor />
         <Navbar />
         {children}
         <Footer />

@@ -70,27 +70,6 @@ export function CurrentlyBuilding() {
       ],
     },
     {
-      title: "Graph Theory Visualizer",
-      description: "Interactive web application for visualizing and manipulating graph theory concepts",
-      role: "Full-Stack Developer",
-      link: "https://graph-viz.wahabcide.xyz",
-      github: "https://github.com/wahab-cide/graph-theory",
-      techStack: [
-        { name: "Next.js 15", color: "neutral" },
-        { name: "React 19", color: "cyan" },
-        { name: "TypeScript", color: "blue" },
-        { name: "Cytoscape.js", color: "emerald" },
-        { name: "Tailwind CSS", color: "sky" },
-        { name: "Motion", color: "purple" },
-      ],
-      features: [
-        "Interactive graph creation and manipulation",
-        "Pre-built templates for common graph structures",
-        "Undo/redo functionality with keyboard shortcuts",
-        "Real-time visualization with smooth animations",
-      ],
-    },
-    {
       title: "Aquion",
       description: "Hydropanels harvesting clean water from air for African rural villages",
       role: "Project Lead",
@@ -144,9 +123,13 @@ export function CurrentlyBuilding() {
 
         <div className="grid grid-cols-1 gap-12">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
-              className="border-l-2 border-neutral-700 pl-6 md:pl-8 pr-0 py-2 hover:border-cyan-500/60 transition-all duration-300 hover:bg-neutral-950/30"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="border-l-2 border-neutral-700 pl-6 md:pl-8 pr-0 py-2 hover:border-cyan-500/60 transition-all duration-300 hover:bg-neutral-950/30 hover:translate-x-1"
             >
               {/* Header */}
               <div className="flex items-start justify-between mb-4">
@@ -234,7 +217,7 @@ export function CurrentlyBuilding() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

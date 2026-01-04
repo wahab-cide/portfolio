@@ -69,6 +69,7 @@ export function Podcasts() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
+              whileHover={{ y: -8 }}
               className="group cursor-pointer"
             >
               <div className="relative aspect-square md:aspect-[3/4] overflow-hidden rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neutral-700 transition-all duration-300">
