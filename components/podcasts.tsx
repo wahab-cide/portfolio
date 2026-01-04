@@ -71,7 +71,7 @@ export function Podcasts() {
               viewport={{ once: true }}
               className="group cursor-pointer"
             >
-              <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neutral-700 transition-all duration-300">
+              <div className="relative aspect-square md:aspect-[3/4] overflow-hidden rounded-lg bg-neutral-900 border border-neutral-800 hover:border-neutral-700 transition-all duration-300">
                 <Image
                   src={guest.image}
                   alt={guest.name}
@@ -107,7 +107,7 @@ export function Podcasts() {
             href="https://youtube.com/@studio_275?si=pcJzAAX_0iAOzS8S"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-neutral-400 hover:text-white transition-colors px-6 py-3 border border-neutral-800 rounded-lg hover:border-neutral-600"
+            className="inline-flex items-center gap-2 text-neutral-400 hover:text-white transition-colors"
           >
             View all episodes on YouTube
             <svg

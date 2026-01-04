@@ -142,11 +142,11 @@ export function CurrentlyBuilding() {
           Projects
         </motion.h2>
 
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 gap-12">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="border border-neutral-800 rounded-lg p-6 md:p-8 hover:border-neutral-700 transition-all duration-300 bg-neutral-950/50"
+              className="border-l-2 border-neutral-700 pl-6 md:pl-8 pr-0 py-2 hover:border-cyan-500/60 transition-all duration-300 hover:bg-neutral-950/30"
             >
               {/* Header */}
               <div className="flex items-start justify-between mb-4">

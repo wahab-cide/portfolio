@@ -5,6 +5,15 @@ import { motion } from "framer-motion";
 export function Research() {
   const research = [
     {
+      title: "Explainable AI for Chess Engines",
+      period: "Ongoing",
+      points: [
+        "Developing natural language explanation systems that translate chess engine evaluations into human-understandable strategic concepts, bridging the gap between computational analysis and human comprehension",
+        "Implementing attention-based neural architectures to identify and visualize critical board features that influence positional evaluations, enabling transparent decision-making in chess AI",
+        "Creating interpretable feature extraction pipelines that decompose engine evaluations into fundamental chess principles (material, mobility, king safety, pawn structure) with quantifiable importance scores",
+      ],
+    },
+    {
       title: "Multilingual African Language Model (MALM)",
       period: "Ongoing",
       location: "Williamstown, MA",
